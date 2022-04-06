@@ -1,0 +1,120 @@
+.panel {
+  position: relative;
+  background-color: #ffe6e6;
+}
+.panel .nav-ellipse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  transform: translateX(-150%) translateY(-35%) rotate(90deg);
+}
+.panel .bod-ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transform: translateY(35%);
+}
+.panel .panel-content {
+  z-index: 10;
+}
+.panel .panel-content .navbar {
+  padding: 2rem 4rem 5rem 4rem;
+}
+.panel .panel-content .title {
+  padding: 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  position: relative;
+}
+.panel .panel-content .title .title-image {
+  width: 100%;
+}
+@media screen and (max-width: 995px) {
+  .panel .panel-content .title {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.recipes-container {
+  padding: 5rem 10rem;
+}
+.recipes-container .recipes {
+  padding-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+.recipes-container .recipes .recipe-card {
+  background-color: #ffe6e6;
+  border-radius: 1rem;
+  padding: 2rem;
+  overflow: visible;
+}
+.recipes-container .recipes .recipe-card .highlight-image {
+  position: relative;
+  float: right;
+  top: -6.4rem;
+  right: -3.75rem;
+}
+@media screen and (max-width: 995px) {
+  .recipes-container {
+    padding: 5rem 20vw;
+  }
+  .recipes-container .recipes {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+.tricks {
+  background-color: #ffe6e6;
+  overflow: visible;
+}
+.tricks .ellipse2 {
+  position: relative;
+  top: -18rem;
+  transform: rotate(180deg);
+}
+.tricks .tricks-content {
+  padding: 5rem 10rem;
+}
+@media screen and (max-width: 995px) {
+  .tricks .tricks-content {
+    padding: 5rem 20vw;
+  }
+  .tricks .tricks-content .tricks-pic {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #3F3F3F;
+  color: white;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.footer .socials .icons {
+  padding-right: 1rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+hr {
+  position: relative;
+  left: 2.5rem;
+  width: 25%;
+  height: 100px;
+  background-color: #ff9999;
+}
